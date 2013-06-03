@@ -14,7 +14,7 @@ var routes = {
 					}
 				})
 				.otherwise({
-					redirectTo: 'nope'
+					redirectTo: 'slide1'
 				});
 
 				// $locationProvider.html5Mode(true);
