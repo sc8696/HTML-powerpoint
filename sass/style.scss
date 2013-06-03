@@ -1,0 +1,106 @@
+@import "compass";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+*{
+	@include box-sizing(border-box);
+}
+
+html{
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+html,body{
+	margin: 0;
+	padding: 0;
+	background-color: #252525;
+	color: #eee;
+	overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+	letter-spacing: 2px;
+	font-weight: 700;
+	margin: 0;
+}
+
+p,li,span{
+	font-size: 150%;
+}
+
+ul{
+	list-style: square;
+}
+
+li{
+	padding: 5px 0;
+}
+
+img{
+	@include box-shadow(0px 0px 10px 0px black);
+}
+
+
+header.branding{
+	color: #D63737;
+	width: 100%;
+	border-bottom: 1px solid #9c9c9c;
+	padding: 10px 2%;
+	background-color: white;
+	z-index: 1000;
+	position: relative;
+
+}
+
+.slide{
+	padding: 20px 2%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	header{
+		background-color: #333;
+		border: 1px solid #484848;
+		padding: 0 10px;
+	}
+}
+
+.textRight{
+	text-align: right;
+}
+
+.clear{
+	clear: both;
+}
+
+.newSlide-enter,
+.newSlide-leave,
+.newSlide-move {
+  -webkit-transition: 800ms ease-out all;
+  -moz-transition: 800ms ease-out all;
+  -o-transition: 800ms ease-out all;
+  transition: 800ms ease-out all;
+  position: absolute;
+}
+
+.newSlide-enter {
+	// @include scale(1.05);
+	opacity: 0;
+	@include transition-delay(200ms);
+}
+.newSlide-enter.newSlide-enter-active {
+	// @include scale(1);
+	opacity: 1;
+}
+
+
+
+.newSlide-leave {
+	// @include scale(1);
+	opacity: 1;
+	// left: 0;
+}
+.newSlide-leave.newSlide-leave-active {
+	// @include scale(0.95);
+	opacity: 0;
+}

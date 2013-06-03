@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+/* line 4, ../sass/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/style.scss */
+html {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* line 12, ../sass/style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #252525;
+  color: #eee;
+  overflow: hidden;
+}
+
+/* line 20, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* line 26, ../sass/style.scss */
+p, li, span {
+  font-size: 150%;
+}
+
+/* line 30, ../sass/style.scss */
+ul {
+  list-style: square;
+}
+
+/* line 34, ../sass/style.scss */
+li {
+  padding: 5px 0;
+}
+
+/* line 38, ../sass/style.scss */
+img {
+  -webkit-box-shadow: 0px 0px 10px 0px black;
+  -moz-box-shadow: 0px 0px 10px 0px black;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+/* line 43, ../sass/style.scss */
+header.branding {
+  color: #D63737;
+  width: 100%;
+  border-bottom: 1px solid #9c9c9c;
+  padding: 10px 2%;
+  background-color: white;
+  z-index: 1000;
+  position: relative;
+}
+
+/* line 54, ../sass/style.scss */
+.slide {
+  padding: 20px 2%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 61, ../sass/style.scss */
+.slide header {
+  background-color: #333;
+  border: 1px solid #484848;
+  padding: 0 10px;
+}
+
+/* line 68, ../sass/style.scss */
+.textRight {
+  text-align: right;
+}
+
+/* line 72, ../sass/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 78, ../sass/style.scss */
+.newSlide-enter,
+.newSlide-leave,
+.newSlide-move {
+  -webkit-transition: 800ms ease-out all;
+  -moz-transition: 800ms ease-out all;
+  -o-transition: 800ms ease-out all;
+  transition: 800ms ease-out all;
+  position: absolute;
+}
+
+/* line 86, ../sass/style.scss */
+.newSlide-enter {
+  opacity: 0;
+  -webkit-transition-delay: 200ms;
+  -moz-transition-delay: 200ms;
+  -o-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+
+/* line 91, ../sass/style.scss */
+.newSlide-enter.newSlide-enter-active {
+  opacity: 1;
+}
+
+/* line 98, ../sass/style.scss */
+.newSlide-leave {
+  opacity: 1;
+}
+
+/* line 103, ../sass/style.scss */
+.newSlide-leave.newSlide-leave-active {
+  opacity: 0;
+}
