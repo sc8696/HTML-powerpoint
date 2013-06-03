@@ -84,23 +84,23 @@ header.branding{
 }
 
 .newSlide-enter {
-	// @include scale(1.05);
+	@include scale(1.05);
 	opacity: 0;
 	@include transition-delay(200ms);
 }
 .newSlide-enter.newSlide-enter-active {
-	// @include scale(1);
+	@include scale(1);
 	opacity: 1;
 }
 
 
 
 .newSlide-leave {
-	// @include scale(1);
+	@include scale(1);
 	opacity: 1;
 	// left: 0;
 }
 .newSlide-leave.newSlide-leave-active {
-	// @include scale(0.95);
+	@include scale(0.95);
 	opacity: 0;
 }
