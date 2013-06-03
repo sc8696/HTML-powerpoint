@@ -28,11 +28,13 @@ var controllers = {
 					//Right, down, enter
 				   	if (e.keyCode === 39 || e.keyCode === 40 || e.keyCode === 13) {
 				   		move(1);
+				   		e.preventDefault();
 				        
 				    }
 				    //Left, up, backspace
 					if (e.keyCode === 37 || e.keyCode === 38 || e.keyCode === 8) {
 						move(-1);
+						e.preventDefault();
 				    }
 				}
 
