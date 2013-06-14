@@ -13,6 +13,6 @@ That's it. Open up index.html in a browser and you should be good to go.
 Perfect for hosting slides on the internet or making your presentations look a little flashier if you're a CSS guru.
 Also perfect for people who hate Powerpoint (me) and like coding (me).
 
-This needs local file access so needs to run in Firefox or on a web server (for Chrome, IE, Safari etc.) to work locally
+NB: This currently needs local file access from the browser so needs to run in Firefox or on a web server (for Chrome, IE, Safari etc.) to work locally
 
 Use right/down/enter to go forward and left/up/backspace to go backwards.
