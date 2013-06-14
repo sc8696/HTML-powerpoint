@@ -1,4 +1,4 @@
-Angular Slides
+HTML slideshow
 =============
 
 <h2>Easy-to-make HTML slideshow</h2>
